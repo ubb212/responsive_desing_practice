@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 7px;
+}
+
+/*Yukardakileri projeye başlar başlamaz yap. */
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;/*SATIRLAR ARASI BOŞLUK*/
+    text-align: center;
+    background-color: #333;
+    color: aliceblue;
+
+    /*Yukardakiler sitemizin ana teması gibi 2. olarak bunlar yapılmalı*/
+}
+a{
+    text-decoration: none;/*Link daha güzel gözükmeli*/
+    
+
+}
+p{
+    padding: 1.6rem 0;
+    font-size: 2.5rem;
+}
+
+img{
+    width:96%;/*İÇİNDE BULUNDUĞU DİVİ KAPLASIN*/
+    height: auto;/*RESMİ DEFORME ETMİŞ OLURUZ DEĞER VERİRSEK*/
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+header{
+    height: 46rem;
+
+}
+header .bg-image{
+      background-image: url(images/bg.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 46rem;
+      width: 100%;/*genişlik 100 olmalı*/
+      opacity: 0.6;/*Resmi birazcık soldurduk*/
+      position: absolute;/*Böyle yapmazsak yazı resmin içinde olmaz*/
+      z-index: -1;/*Resmi yazıların arkasına gömdük*/
+}
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+    
+}
+.btn{
+    display: inline-block;
+    background-color: #333;
+    color: aliceblue;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: 0.5rem 0;
+    transition: all 0.4s;/*Butonun üstüne gelindiğinde yavaş efekt*/
+
+}
+.btn:hover{
+    background-color: aliceblue;
+    color: #333;
+    
+}
+#section-a{
+    background-color: aliceblue;
+    color: #333;
+    padding: 3.2rem;
+}
+#section-b{
+    padding: 2rem;
+
+}
+#section-b ul{
+    list-style:none;
+
+}
+#section-b li{
+    background-color: aliceblue;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.col-content{
+    padding: 1.5;
+}
+#section-c{
+    background-color:aliceblue;
+    color: #333;
+    padding: 5rem;
+}
+
+#section-d .box{
+    padding: 5rem;
+}
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+footer{
+    padding: 4rem;
+    background:black;
+}
+footer a{
+    color:yellowgreen
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and(min-width:800px){
+
+    html{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+}
