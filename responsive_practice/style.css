@@ -8,7 +8,7 @@ html{
     font-size: 7px;
 }
 
-/*Yukardakileri projeye başlar başlamaz yap. */
+
 
 
 body{
@@ -19,7 +19,7 @@ body{
     background-color: #333;
     color: aliceblue;
 
-    /*Yukardakiler sitemizin ana teması gibi 2. olarak bunlar yapılmalı*/
+    
 }
 a{
     text-decoration: none;/*Link daha güzel gözükmeli*/
