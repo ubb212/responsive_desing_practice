@@ -32,7 +32,7 @@ p{
 }
 
 img{
-    width:96%;/*İÇİNDE BULUNDUĞU DİVİ KAPLASIN*/
+    width:100%;/*İÇİNDE BULUNDUĞU DİVİ KAPLASIN*/
     height: auto;/*RESMİ DEFORME ETMİŞ OLURUZ DEĞER VERİRSEK*/
 }
 
